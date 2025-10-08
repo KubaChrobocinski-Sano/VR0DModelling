@@ -1,0 +1,33 @@
+{
+  "modelName": "3-Element Windkessel",
+  "voltageSource": {
+    "name": "V",
+    "biologicalName": "Pressure",
+    "value": "Inlet"
+  },
+  "parameters": [
+    {
+      "name": "R1",
+      "biologicalName": "Characteristic Impedance",
+      "type": "Resistor",
+      "value": 0.1,
+      "connection": "series"
+    },
+    {
+      "name": "R2",
+      "biologicalName": "Peripheral Resistance",
+      "type": "Resistor",
+      "value": 1.0,
+      "connection": "parallel"
+    },
+    {
+      "name": "C1",
+      "biologicalName": "Arterial Compliance",
+      "type": "Capacitor",
+      "value": 1.5,
+      "connection": "parallel"
+    }
+  ],
+  "differentialEquation": "(1 + R1/R2)*Q + C1*R1*dQ/dt = (1/R2)*P + C1*dP/dt"
+}
+

@@ -1,0 +1,16 @@
+{
+  "modelName": "2-Element Windkessel",
+  "description": "A simplified 0D model of arterial blood flow with total resistance and capacitance.",
+  "parameters": [
+    {
+      "name": "TotalResistance",
+      "type": "Resistor",
+      "value": 1.25
+    },
+    {
+      "name": "Capacitance",
+      "type": "Capacitor",
+      "value": 1.5
+    }
+  ]
+}
