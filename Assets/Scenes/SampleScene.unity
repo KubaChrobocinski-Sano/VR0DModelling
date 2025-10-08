@@ -343,14 +343,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShaderPlotController
   plotMaterial: {fileID: 2100000, guid: 3b50b752b4163fc4e86f731bb0f33d1f, type: 2}
   plotTarget: {fileID: 367876192}
-  plotToShow: 3
+  plotToShow: plv
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}
   waveformColor: {r: 0, g: 1, b: 0, a: 1}
   axisColor: {r: 1, g: 1, b: 1, a: 1}
-  xTicks: 1
-  yTicks: 1
+  xTicks: 10
+  yTicks: 5
   labelFont: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-  labelFontSize: 10
+  labelFontSize: 14
   labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &410087039
 GameObject:
@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 1801427544}
   - component: {fileID: 1801427547}
   - component: {fileID: 1801427546}
-  - component: {fileID: 1801427545}
+  - component: {fileID: 1801427548}
   m_Layer: 5
   m_Name: DisplayAP
   m_TagString: Untagged
@@ -852,29 +852,6 @@ RectTransform:
   m_AnchoredPosition: {x: 210, y: 178}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1801427545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801427543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddb74880d192d884eae50737526d58e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShaderPlotController
-  plotMaterial: {fileID: 2100000, guid: 2f5fb0926468e4b47a585f1526ac7c13, type: 2}
-  plotTarget: {fileID: 1801427546}
-  plotToShow: 1
-  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
-  waveformColor: {r: 1, g: 0, b: 0.09202385, a: 1}
-  axisColor: {r: 1, g: 1, b: 1, a: 1}
-  xTicks: 1
-  yTicks: 1
-  labelFont: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-  labelFontSize: 10
-  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1801427546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,6 +887,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801427543}
   m_CullTransparentMesh: 1
+--- !u!114 &1801427548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801427543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb74880d192d884eae50737526d58e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShaderPlotController
+  plotMaterial: {fileID: 2100000, guid: 2f5fb0926468e4b47a585f1526ac7c13, type: 2}
+  plotTarget: {fileID: 1801427546}
+  plotToShow: pa
+  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  waveformColor: {r: 0, g: 1, b: 0, a: 1}
+  axisColor: {r: 1, g: 1, b: 1, a: 1}
+  xTicks: 10
+  yTicks: 5
+  labelFont: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+  labelFontSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1825026721
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 1825026722}
   - component: {fileID: 1825026725}
   - component: {fileID: 1825026724}
-  - component: {fileID: 1825026723}
+  - component: {fileID: 1825026726}
   m_Layer: 5
   m_Name: DisplayFlow
   m_TagString: Untagged
@@ -948,29 +948,6 @@ RectTransform:
   m_AnchoredPosition: {x: 210, y: -160}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1825026723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825026721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddb74880d192d884eae50737526d58e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShaderPlotController
-  plotMaterial: {fileID: 2100000, guid: 3a23792c3816ab34cabeb3659667a809, type: 2}
-  plotTarget: {fileID: 1825026724}
-  plotToShow: 3
-  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
-  waveformColor: {r: 0, g: 1, b: 0, a: 1}
-  axisColor: {r: 1, g: 1, b: 1, a: 1}
-  xTicks: 1
-  yTicks: 1
-  labelFont: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-  labelFontSize: 10
-  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1825026724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +983,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825026721}
   m_CullTransparentMesh: 1
+--- !u!114 &1825026726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825026721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb74880d192d884eae50737526d58e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShaderPlotController
+  plotMaterial: {fileID: 2100000, guid: 3a23792c3816ab34cabeb3659667a809, type: 2}
+  plotTarget: {fileID: 1825026724}
+  plotToShow: flow
+  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  waveformColor: {r: 0, g: 1, b: 0, a: 1}
+  axisColor: {r: 1, g: 1, b: 1, a: 1}
+  xTicks: 10
+  yTicks: 5
+  labelFont: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+  labelFontSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1899355121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,8 +1015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899355123}
-  - component: {fileID: 1899355130}
-  - component: {fileID: 1899355131}
+  - component: {fileID: 1899355124}
   m_Layer: 0
   m_Name: AppController
   m_TagString: Untagged
@@ -1039,21 +1038,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1899355130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899355121}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b96900129f221b54b98e817548364e6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JuliaTestClient
-  host: 127.0.0.1
-  port: 2000
---- !u!114 &1899355131
+--- !u!114 &1899355124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1062,18 +1047,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1899355121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d09cd2e01e226408fb4c0b51dac3a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 174f347cb82696342a725cbf1f8556c9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JuliaClientv2
+  m_EditorClassIdentifier: Assembly-CSharp::JuliaClient
   host: 127.0.0.1
   port: 2000
-  heartRate: 70
-  R1: 0.02
-  R2: 0.5
-  C: 1.5
-  plotController1: {fileID: 367876194}
-  plotController2: {fileID: 1825026723}
-  plotController3: {fileID: 1801427545}
+  modelName: 
+  availableOutputs: []
+  parameters: []
+  plotControllers:
+  - {fileID: 367876194}
+  - {fileID: 1825026726}
+  - {fileID: 1801427548}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-
+/*
 public class ShaderPlotController : MonoBehaviour
 {
     [Header("Shader References")]
@@ -218,3 +218,4 @@ public static class Texture2DExtensions
         tex.SetPixels(fillColorArray);
     }
 }
+*/
