@@ -1062,9 +1062,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1899355121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 174f347cb82696342a725cbf1f8556c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 27d09cd2e01e226408fb4c0b51dac3a1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JuliaClient
+  m_EditorClassIdentifier: Assembly-CSharp::JuliaClientv2
   host: 127.0.0.1
   port: 2000
   heartRate: 70

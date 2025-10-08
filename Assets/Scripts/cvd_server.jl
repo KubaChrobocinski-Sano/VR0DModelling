@@ -90,6 +90,17 @@ while true
     @async begin
         try
             line = readline(sock)
+            if startswith(line, "SET")
+                _, name, val = split(line)
+                if name == "R1"
+                    global R1 = parse(Float64, val)
+                elseif name == "R2"
+                    global R2 = parse(Float64, val)
+                elseif name == "C1"
+                global C1 = parse(Float64, val)
+                end
+                println("Updated: $name = $val")
+            end
             params = JSON.parse(line)
             println("Received from Unity: ", params)
             result = run_sim(params)

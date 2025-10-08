@@ -4,7 +4,7 @@ using System.Text;
 using System.IO;
 using System.Threading.Tasks;
 using System;
-
+/*
 [Serializable]
 public class SimulationResult
 {
@@ -31,6 +31,7 @@ public class JuliaClient : MonoBehaviour
     public ShaderPlotController plotController1;
     public ShaderPlotController plotController2;
     public ShaderPlotController plotController3;
+
 
     async void Start()
     {
@@ -64,8 +65,8 @@ public class JuliaClient : MonoBehaviour
 
                 if (plotController1 != null)
                     plotController1.DisplaySimulation(result);
-                    plotController2.DisplaySimulation(result);
-                    plotController3.DisplaySimulation(result);
+                plotController2.DisplaySimulation(result);
+                plotController3.DisplaySimulation(result);
             }
         }
         catch (Exception e)
@@ -73,4 +74,4 @@ public class JuliaClient : MonoBehaviour
             Debug.LogError($"Julia connection failed: {e.Message}");
         }
     }
-}
+}*/
